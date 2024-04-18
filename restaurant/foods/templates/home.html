@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="flex">
+    <div class="w-1/5 bg-gray-200 p-4 flex flex-col space-y-8">
+        <a href="{% url 'home' %}" class="category-link text-xl font-bold shadow-sm">All foods</a>
+        {% for categorys in category %}
+            <a href="{% url 'home' %}?category={{categorys.name}}" class="category-link text-xl font-bold shadow-sm">{{categorys.name}}</a>
+        {% endfor %}
+    </div>
+    
+    
+<div class="w-3/5 p-4">
+    <div class="flex flex-wrap  gap-6"> <!-- Flex container with horizontal wrapping and gap between items -->
+        {% for food in food %}
+        <div class="bg-white rounded-lg shadow-md overflow-hidden w-56"> <!-- Fixed width of the card container -->
+            <a href="{% url 'food_detail' food.id %}">
+                <img src="{{ food.image.url }}" alt="Image of {{ food.name }}" class="w-full h-40 object-cover"> <!-- Adjusted height and width to fill the container -->
+            </a>
+            <div class="p-4">
+                <h2 class="text-xl font-semibold text-gray-800">{{ food.name }}</h2>
+                <p class="text-gray-600">Rs.{{ food.price }}</p>
+            </div>
+            <div class="p-4 bg-gray-100">
+                <a href="{% url 'add_to_cart' food.id %}" class="block bg-blue-500 text-white py-2 px-4 rounded text-center hover:bg-blue-600">Add to Cart</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    
+    
+    
+    
+</div>
+</div>
+
+{% endblock content %}

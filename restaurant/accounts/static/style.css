@@ -1,0 +1,115 @@
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#bg{
+    background-color: bisque;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#bg h1{
+    text-align: center;
+    color: blueviolet;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+#loginform{
+    background-color: aquamarine;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+}
+#loginform input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;  
+}
+#loginform #loginbtn{
+    width: 100%;
+    padding: 5px;
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+#reg p {
+font-size: 18px;
+margin-top: 10px;
+}
+/* #items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    padding: 20px;
+    
+}
+#items .card{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#items img{
+    width: 200px;
+    height: 180px;
+    border-radius: 5px; 
+}
+#items h2{
+    font-size: 20px;
+    margin-top: 10px;
+}
+#items p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+#items button{
+    width: 100%;
+    padding: 5px;
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+} */
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    height: 70px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar li a:hover {
+    background-color: #555;
+  } */ 
